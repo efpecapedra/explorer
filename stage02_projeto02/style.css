@@ -1,115 +1,150 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+/* 
 
+CSS STRUCTURE IN 4 SECTIONS
+
+PAGE LAYOUT
+STYLE FONTS
+STYLE LAYOUT
+EFFECTS
+
+*/
+
+/* --------------------------------------------------------------------------------------------- */
+/* LAYOUT PAGE */
 
 body {
-    margin: 0, auto;
-    width: 1280px;
-    height: 720px;
-    text-align: center;
-    background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+  margin: 0 auto;
+  background: linear-gradient(180deg, rgb(227, 255, 248, 0) 82.08%, rgb(227, 255, 248, 0.38) 100%);
+  min-height: 100vh;
+  width: 1000px;
 }
 
-header {
-    margin-top: 65px;
+.page {
+  padding-top: 65px;
 }
 
-header div {
-    justify-content: space-between;
-    display: flex;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
 }
 
-.header-logo {
-    width: 103px;
-    margin-left: 122px;
-    font-family: 'Inter', sans-serif;
-    font-size: 22px;
-    color: rgba(137, 197, 204, 1);
+ul {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.header-nav {
-    display: flex;
-    width: 267px;
-    margin-right: 153px;
-    justify-content: space-between;
-    font-family: 'Mulish', sans-serif;
-}
-
-main {
-    margin: 58px 153px 82px 119px;
-}
-
-.main-section {
-    justify-content: space-between;
-    display: flex;
-}
-
-.main-left {
-    width: 489px;
-    height: 332px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: left;
-}
-
-button {
-    width: 179px;
-    height: 56px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    background: #69B99D;
-    color: white;
-    border-radius: 4px;
-    border-style: none;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
-}
-
-button a+span {
-    margin-left: 10px;
-}
-
-footer {
-    margin-bottom: 30px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 28px;
-}
-
-.footer-balls {
-    position: fixed;
-    bottom: 0;
-    right: 0;
+section {
+  display: flex;
+  justify-content: space-between;
 }
 
 h1 {
-    color: #000000;
-    font-family: 'Mulish', sans-serif;
-    font-weight: 400;
-    font-size: 49px;
-    line-height: 56px;
+  width: 490px;
 }
 
-h1 strong {
-    color: #89C5CC;
-    font-family: 'Mulish', sans-serif;
+section p {
+  margin: 40px 0;
 }
 
-p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 28px;
+footer {
+  font-size: 14px;
+  line-height: 28px;
+
+  text-align: center;
+
+  margin-top: 80px;
 }
 
-font {
-    font-family: 'Inter', sans-serif;
-    font-family: 'Mulish', sans-serif;
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* STYLE FONTS */
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #1f1534;
+  text-decoration: none;
+}
+
+h1,
+ul {
+  font-family: "Mulish", sans-serif;
+}
+
+ul li a {
+  opacity: 0.5;
+}
+
+ul li a:hover {
+  font-weight: bold;
+  opacity: 1;
+}
+
+h1 {
+  color: #1f1534;
+  font-weight: normal;
+  font-size: 49px;
+  line-height: 56px;
+}
+
+h1 span {
+  color: #89c5cc;
+  font-weight: bold;
+}
+
+section p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #7d7987;
+
+  margin: 40px 0;
+}
+
+footer a {
+  font-weight: bold;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* STYLE LAYOUT */
+
+body {
+  background: linear-gradient(180deg, rgb(227, 255, 248, 0) 82.08%, rgb(227, 255, 248, 0.38) 100%);
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* EFECTS */
+
+button {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+
+  background: #69B99D;
+  border: 0;
+  padding: 14px 32px 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4EA788;
 }
