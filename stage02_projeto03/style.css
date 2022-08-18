@@ -1,3 +1,18 @@
+/*
+
+CSS STRUCTURE IN 4 SECTIONS
+
+LAYOUT PAGE
+LAYOUT FONTS
+STYLE FONTS
+STYLE LAYOUT
+EFFECTS
+
+*/
+
+/* --------------------------------------------------------------------------------------------- */
+/* LAYOUT PAGE */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,13 +20,197 @@
 
 body {
     margin: 0, auto;
+    min-height: 100vh;
     width: 1280px;
-    height: 720px;
+}
+
+.header-line {
+    margin: 0 99px 101px 99px;
+    padding-top: 71px;
+    display: flex;
+    justify-content: space-between;
+    width: 1083px;
+}
+
+.header-nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 68px;
+}
+
+section {
+    margin: 0 89px 157px 99px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 605px;
+}
+
+footer {
+    margin: 0px 356px 23px 356px;
+}
+
+.footer-insta {
+    height: 55px;
+    border-top: 1px solid rgba(0, 191, 166, 1);
+}
+
+.footer-padlock {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* LAYOUT FONTS */
+.header-nav ul {
+    list-style: none;
+    align-items: center;
+}
+
+.main-info {
+    align-items: center;
+}
+
+.main-title {
     text-align: center;
+}
+
+.main-text {
+    text-align: center;
+}
+
+.footer-insta p {
+    text-align: center;
+    padding: 55px 0 23px 0;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* STYLE FONTS */
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.header-logo {
+    font-weight: 700px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+ul li a {
+    opacity: 0.5;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-weight: 500px;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+ul li a:hover {
+    font-weight: bold;
+    opacity: 1;
+}
+
+.main-title h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.main-title h1 span {
+    color: rgba(0, 191, 166, 1);
+}
+
+.main-text p {
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(125, 121, 135, 1);
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.main-text p span {
+    font-weight: 700;
+    color: rgba(194, 194, 194, 1)
+}
+
+.main-text p strong {
+    color: rgba(0, 191, 166, 1);
+}
+
+.footer-insta a {
+    opacity: 0.5;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+.footer-insta a:hover {
+    font-weight: bold;
+    opacity: 1;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* STYLE LAYOUT */
+
+body {
     background: rgba(44, 43, 61, 1);
 }
 
 
+/* --------------------------------------------------------------------------------------------- */
+/* EFECTS */
+
+button {
+    color: white;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+
+    background: #69B99D;
+    border: 0;
+    padding: 14px 32px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4EA788;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 header {
     padding-top: 71px;
 }
@@ -84,7 +283,7 @@ footer {
     left: 0;
 }
 
-/* FONT STYLE */
+style
 
 h1,
 p {
@@ -129,4 +328,4 @@ p {
 
 .main-right div p span {
     color: #00BFA6;
-}
+} */
