@@ -2,7 +2,7 @@
 
 CSS STRUCTURE IN 4 SECTIONS
 
-PAGE LAYOUT
+LAYOUT PAGE
 STYLE FONTS
 STYLE LAYOUT
 EFFECTS
@@ -12,9 +12,13 @@ EFFECTS
 /* --------------------------------------------------------------------------------------------- */
 /* LAYOUT PAGE */
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0 auto;
-  background: linear-gradient(180deg, rgb(227, 255, 248, 0) 82.08%, rgb(227, 255, 248, 0.38) 100%);
   min-height: 100vh;
   width: 1000px;
 }
