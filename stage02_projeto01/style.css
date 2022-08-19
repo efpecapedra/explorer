@@ -1,3 +1,16 @@
+/*
+
+CSS STRUCTURE IN 2 SECTIONS
+
+LAYOUT PAGE
+STYLE FONTS
+
+*/
+
+/* ----------- */
+/* LAYOUT PAGE */
+/* ----------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,21 +18,74 @@
 
 body {
     margin: 0, auto;
-    width: 37rem;
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-
+    width: 80rem;
+    height: 100vh;
+    border: 0 22.5rem;
 }
 
 body div {
-    margin-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    margin-bottom: 4.5rem;
+}
+
+main div {
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.title {
+    border-bottom: 2 rem;
+}
+
+.links {
+    margin: 4.5rem 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.links a+a {
+    margin-left: 1rem;
+}
+
+.footer-img {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* ----------- */
+/* STYLE FONTS */
+/* ----------- */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.links a {
+    font-size: 1rem;
+    line-height: 2rem;
+    opacity: 0.5;
+    color: #FF9900;
+    text-decoration: none;
+}
+
+.links a:hover {
+    font-weight: bold;
+    opacity: 1;
 }
 
 h1 {
-    margin-bottom: 32px;
     font-family: 'Inter', sans-serif;
-    font-size: 49px;
-    line-height: 56px;
+    font-size: 3rem;
+    line-height: 3.5rem;
     font-weight: normal;
 }
 
@@ -27,33 +93,12 @@ h1 span {
     font-weight: bold;
 }
 
-.body-img {
-    margin-bottom: 72px;
-}
-
 p {
     color: #7D7987;
-    font-size: 14px;
-    line-height: 28px;
+    font-size: 1rem;
+    line-height: 2rem;
 }
 
 span {
     color: #FF9900;
-}
-
-footer {
-    margin: 0, auto;
-    width: 37rem;
-    font-size: 14px;
-    line-height: 28px;
-}
-
-footer a+a {
-    margin-left: 20px;
-}
-
-.footer-img {
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
 }
