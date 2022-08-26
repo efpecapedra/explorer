@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    /*TEXT FONT*/
+    --ff-heading: 'Epilogue', sans-serif;
+    --fs-heading: clamp(2rem, 4vw, 15rem);
+
+    --ff-legend: 'Epilogue', sans-serif;
+    --fs-legend: clamp(1.5rem, 3vw, 5rem);
+
+    --ff-texting: 'Epilogue', sans-serif;
+    --fs-texting: clamp(1rem, 2vw, 3rem);
+
+    /*COLOR FONT*/
+    --hue: 360;
+    --fc-legend: hsl(var(--hue), 100%, 15%);
+    --fc-input: hsl(var(--hue), 100%, 20%);
+
+    /*COLOR BACKGROUND*/
+    --bg-first: hsl(var(--hue), 40%, 95%);
+    --bg-second: hsl(var(--hue), 20%, 95%);
+    --bg-third: hsl(var(--hue), 60%, 95%);
+    --bg-fourth: hsl(var(--hue), 100%, 10%);
+}
+
+/*LAYOUT*/
+.body-page {
+    margin: 3vw auto;
+    max-width: clamp(30rem, 50vw, 250rem);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-registration,
+.property-registration,
+.inspector-registration {
+    display: flex;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.header-title {
+    margin-bottom: 3rem;
+}
+
+.section-form {
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    border: none;
+}
+
+.fieldset-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: clamp(25rem, 40vw, 250rem);
+}
+
+.fieldset-wrapper div {
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-registration .contact-wrapper {
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%
+}
+
+#email-wrapper {
+    width: 66%
+}
+
+#phone-wrapper {
+    width: 33%
+}
+
+.customer-registration .property-wrapper {
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%
+}
+
+#property-wrapper {
+    width: 58%
+}
+
+#type-wrapper {
+    width: 20%
+}
+
+#number-wrapper {
+    width: 20%;
+}
+
+.property-registration .building-wrapper {
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%
+}
+
+#tower-wrapper {
+    width: 58%;
+}
+
+#floor-wrapper {
+    width: 20%;
+}
+
+#unit-wrapper {
+    width: 20%;
+}
+
+#project-wrapper div {
+    display: flex;
+    flex-direction: row;
+}
+
+#project-wrapper div input {
+    width: 100%;
+}
+
+.inspector-registration .date-wrapper {
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.inspector-registration .date-wrapper #at {
+    align-items: center;
+    flex-direction: row;
+    height: 50%;
+    display: flex;
+    gap: 1rem;
+}
+
+#inspection-date {
+    width: 100%;
+}
+
+#inspection-time {
+    width: 100%;
+}
+
+label {
+    margin-bottom: 1rem;
+}
+
+input,
+select {
+    margin-bottom: 1.5rem;
+}
+
+.submit-wrapper {
+    padding: 1rem;
+}
+
+/*FONT AND COLOR*/
+
+body {
+    background-color: var(--bg-third);
+}
+
+.header-title legend {
+    color: var(--bg-third);
+    border-bottom: 1px solid var(--bg-third);
+    font-family: var(--ff-heading);
+    font-size: var(--fs-heading);
+    font-weight: 700;
+}
+
+legend {
+    font-family: var(--ff-legend);
+    font-size: var(--fs-legend);
+    color: var(--fc-legend);
+    font-weight: 500;
+    margin-bottom: 2rem;
+    justify-content: center;
+    display: flex;
+    border-bottom: 1px solid var(--fc-legend);
+}
+
+.body-page {
+    background-color: var(--bg-fourth);
+}
+
+.input-wrapper {
+    font-family: var(--ff-texting);
+    font-size: var(--fs-texting);
+    font-weight: 300;
+    color: var(--bg-fourth);
+}
+
+select,
+input {
+    font-family: var(--ff-texting);
+    font-size: var(--fs-texting);
+    font-weight: 300;
+    color: var(--fc-input);
+}
+
+.submit-wrapper,
+.customer-registration,
+.property-registration,
+.inspector-registration {
+    background-color: var(--bg-first);
+}
+
+.submit-wrapper,
+select,
+input {
+    border-radius: 8px;
+    border-color: var(--fc-legend);
+    padding: .5rem 1rem;
+}
+
+.submit-wrapper:hover,
+select:hover,
+input:hover {
+    background-color: var(--bg-second);
+}
+
+select:focus,
+input:focus {
+
+    outline: 2px solid green;
+}
+
+input:invalid {
+    border: 1px solid #FF1010;
+}
