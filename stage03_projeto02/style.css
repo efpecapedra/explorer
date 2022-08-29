@@ -24,6 +24,19 @@
 header {
     display: flex;
     flex-direction: column;
+    animation: side 1s ease-in forwards;
+}
+
+@keyframes side {
+    0% {
+        opacity: 0;
+        transform: translateX(-25rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .header-logo {
@@ -75,7 +88,21 @@ header {
     height: clamp(25.6rem, 100vw, 33.6rem);
     object-fit: cover;
     border-radius: 2rem;
+    animation: scale .5s .5s ease-in backwards;
 }
+
+@keyframes scale {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 
 .main-section-product div h2 {
     border-radius: 2rem;
@@ -88,6 +115,8 @@ header {
     top: 1rem;
     right: 1rem;
     z-index: 1;
+
+    animation: scale .2s 1s ease-in backwards;
 }
 
 .main-section-product div h2 a {
